@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// KISS — UserPromptSubmit hook. Watches the prompt for "/kiss" (on),
-// "/kiss off", "stop kiss", or "normal mode" and rewrites the on/off flag.
+// KISS — UserPromptSubmit hook. Watches the prompt for "/caveman-kiss" (on),
+// "/caveman-kiss off", "stop kiss", or "normal mode" and rewrites the on/off flag.
 
 const fs = require("fs");
 const path = require("path");
@@ -22,7 +22,7 @@ process.stdin.on("end", () => {
 			fs.writeFileSync(flag, state);
 		};
 
-		const cmd = prompt.match(/^[/@$]kiss(?:\s+(off|on))?\b/);
+		const cmd = prompt.match(/^[/@$]caveman-kiss(?:\s+(off|on))?\b/);
 		if (cmd) write(cmd[1] === "off" ? "off" : "on");
 
 		if (/\b(stop kiss|normal mode)\b/.test(prompt)) write("off");

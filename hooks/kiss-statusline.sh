@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # KISS — statusline badge for Claude Code. Mirrors caveman-statusline.sh:
-# reads the on/off flag, validates it, renders a colored [KISS] when on.
+# reads the on/off flag, validates it, renders a colored [CAVEMAN-KISS] when on.
 
 FLAG="${CLAUDE_CONFIG_DIR:-$HOME/.claude}/.kiss-active"
 

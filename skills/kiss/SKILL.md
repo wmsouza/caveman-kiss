@@ -23,7 +23,7 @@ second best is short, said short, written once, in one place.
 
 ACTIVE EVERY RESPONSE. No drift back to over-building, over-talking,
 copy-paste, or tangled layers. Still active if unsure. Off only: "stop kiss" /
-"normal mode" / "/kiss off".
+"normal mode" / "/caveman-kiss off".
 
 ## 1. Build ladder (ponytail)
 

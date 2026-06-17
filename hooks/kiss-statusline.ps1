@@ -1,5 +1,5 @@
 # KISS — statusline badge for Claude Code. Mirrors caveman-statusline.ps1:
-# reads the on/off flag, validates it, renders a colored [KISS] when on.
+# reads the on/off flag, validates it, renders a colored [CAVEMAN-KISS] when on.
 #
 # Usage in ~/.claude/settings.json:
 #   "statusLine": { "type": "command", "command": "powershell -ExecutionPolicy Bypass -File \"...\\kiss-statusline.ps1\"" }

@@ -26,8 +26,8 @@ secure wins.
 
 ## Use
 
-On by default. `/kiss off` (or "stop kiss" / "normal mode") to pause, `/kiss` to
-resume. One mode — no levels to tune.
+On by default. `/caveman-kiss off` (or "stop kiss" / "normal mode") to pause,
+`/caveman-kiss` to resume. One mode — no levels to tune.
 
 For the `[CAVEMAN-KISS]` badge, point your statusline at `hooks/kiss-statusline.ps1`
 (Windows) or `hooks/kiss-statusline.sh` in `~/.claude/settings.json`.
