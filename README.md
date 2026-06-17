@@ -20,7 +20,7 @@ secure wins.
 ## Install
 
 ```
-/plugin marketplace add <you>/caveman-kiss
+/plugin marketplace add wmsouza/caveman-kiss
 /plugin install kiss
 ```
 
