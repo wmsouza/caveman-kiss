@@ -3,8 +3,9 @@
 **KISS** = *Keep It Simple, Stupid* — the old engineering maxim that a system
 works best when it's kept simple rather than made complicated.
 
-Lazy senior dev mode for Claude Code: the simplest code that works, said in the
-fewest words. Always on, with a `[CAVEMAN-KISS]` statusline badge.
+A Claude Code plugin that holds both your code and its replies to that maxim:
+the simplest thing that works, written once, said in the fewest words. Always
+on, with a `[CAVEMAN-KISS]` statusline badge.
 
 It keeps four habits firing on every response:
 
