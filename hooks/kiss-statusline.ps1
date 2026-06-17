@@ -27,4 +27,4 @@ $State = $State.ToLowerInvariant() -replace '[^a-z0-9-]', ''
 if ($State -ne "on") { exit 0 }
 
 $Esc = [char]27
-[Console]::Write("${Esc}[38;5;81m[KISS]${Esc}[0m")
+[Console]::Write("${Esc}[38;5;81m[CAVEMAN-KISS]${Esc}[0m")
