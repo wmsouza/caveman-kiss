@@ -22,7 +22,7 @@ secure wins.
 
 ```
 /plugin marketplace add wmsouza/caveman-kiss
-/plugin install kiss
+/plugin install caveman-kiss
 ```
 
 ## Use
@@ -30,8 +30,8 @@ secure wins.
 On by default. `/caveman-kiss off` (or "stop kiss" / "normal mode") to pause,
 `/caveman-kiss` to resume. One mode, no levels to tune.
 
-For the `[CAVEMAN-KISS]` badge, point your statusline at `hooks/kiss-statusline.ps1`
-(Windows) or `hooks/kiss-statusline.sh` in `~/.claude/settings.json`.
+For the `[CAVEMAN-KISS]` badge, point your statusline at `hooks/caveman-kiss-statusline.ps1`
+(Windows) or `hooks/caveman-kiss-statusline.sh` in `~/.claude/settings.json`.
 
 ## Credits
 

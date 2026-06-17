@@ -1,5 +1,5 @@
 {
-  "name": "kiss",
+  "name": "caveman-kiss",
   "version": "0.1.0",
   "description": "Keep It Simple. Fuses ponytail (YAGNI/stdlib-first), caveman (terse output), DRY (rule of three), and separation of concerns into one always-on mode.",
   "author": {

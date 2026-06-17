@@ -7,7 +7,7 @@ const path = require("path");
 const os = require("os");
 
 const claudeDir = process.env.CLAUDE_CONFIG_DIR || path.join(os.homedir(), ".claude");
-const flag = path.join(claudeDir, ".kiss-active");
+const flag = path.join(claudeDir, ".caveman-kiss-active");
 const skill = path.join(__dirname, "..", "skills", "caveman-kiss", "SKILL.md");
 
 const state = fs.existsSync(flag) ? fs.readFileSync(flag, "utf8").trim() : "on";

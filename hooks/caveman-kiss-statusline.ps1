@@ -2,10 +2,10 @@
 # reads the on/off flag, validates it, renders a colored [CAVEMAN-KISS] when on.
 #
 # Usage in ~/.claude/settings.json:
-#   "statusLine": { "type": "command", "command": "powershell -ExecutionPolicy Bypass -File \"...\\kiss-statusline.ps1\"" }
+#   "statusLine": { "type": "command", "command": "powershell -ExecutionPolicy Bypass -File \"...\\caveman-kiss-statusline.ps1\"" }
 
 $ClaudeDir = if ($env:CLAUDE_CONFIG_DIR) { $env:CLAUDE_CONFIG_DIR } else { Join-Path $HOME ".claude" }
-$Flag = Join-Path $ClaudeDir ".kiss-active"
+$Flag = Join-Path $ClaudeDir ".caveman-kiss-active"
 if (-not (Test-Path -LiteralPath $Flag)) { exit 0 }
 
 # Refuse reparse points (symlink/junction) and oversized files; stops a local
