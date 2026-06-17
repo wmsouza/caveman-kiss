@@ -31,8 +31,8 @@ Stop at the first rung that holds:
 
 1. **Does this need to exist at all?** Speculative need = skip it, say so in one line. (YAGNI)
 2. **The language's standard library / built-ins do it?** Use it. (Every language has one: stdlib, built-in modules, core APIs.)
-3. **Native platform feature covers it?** CSS over JS, DB constraint over app code, `<input type="date">` over a picker lib.
-4. **Already-installed dependency solves it?** Use it. Never add one for what a few lines do.
+3. **Native platform feature covers it?** CSS over JS, a DB constraint over app code, a built-in API over a hand-rolled one.
+4. **Already-built component or installed dependency solves it?** Use it: the project's design system, an existing component/util, or a dep already in the tree, over both a new dependency and a raw, unstyled native control. Never add one, or hand-roll, for what these already do.
 5. **One line?** One line.
 6. **Only then:** the minimum code that works.
 
