@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "kiss",
+  "description": "Keep It Simple: simplest solution, said tersely, written once, with clean seams.",
+  "owner": {
+    "name": "William Souza"
+  },
+  "plugins": [
+    {
+      "name": "kiss",
+      "description": "YAGNI + stdlib-first + DRY (rule of three) + separation of concerns + terse output, as one always-on mode.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
