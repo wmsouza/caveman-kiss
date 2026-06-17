@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// KISS — UserPromptSubmit hook. Watches the prompt for "/caveman-kiss" (on),
+// KISS: UserPromptSubmit hook. Watches the prompt for "/caveman-kiss" (on),
 // "/caveman-kiss off", "stop kiss", or "normal mode" and rewrites the on/off flag.
 
 const fs = require("fs");
@@ -27,6 +27,6 @@ process.stdin.on("end", () => {
 
 		if (/\b(stop kiss|normal mode)\b/.test(prompt)) write("off");
 	} catch (e) {
-		// Silent fail — flag is best-effort, never block the prompt.
+		// Silent fail; flag is best-effort, never block the prompt.
 	}
 });

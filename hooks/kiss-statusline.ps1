@@ -1,4 +1,4 @@
-# KISS — statusline badge for Claude Code. Mirrors caveman-statusline.ps1:
+# KISS: statusline badge for Claude Code. Mirrors caveman-statusline.ps1:
 # reads the on/off flag, validates it, renders a colored [CAVEMAN-KISS] when on.
 #
 # Usage in ~/.claude/settings.json:
@@ -8,7 +8,7 @@ $ClaudeDir = if ($env:CLAUDE_CONFIG_DIR) { $env:CLAUDE_CONFIG_DIR } else { Join-
 $Flag = Join-Path $ClaudeDir ".kiss-active"
 if (-not (Test-Path -LiteralPath $Flag)) { exit 0 }
 
-# Refuse reparse points (symlink/junction) and oversized files — stops a local
+# Refuse reparse points (symlink/junction) and oversized files; stops a local
 # attacker pointing the flag at a secret and rendering its bytes to the terminal.
 try {
     $Item = Get-Item -LiteralPath $Flag -Force -ErrorAction Stop
@@ -22,7 +22,7 @@ try {
     if ($null -ne $Raw) { $State = ([string]$Raw).Trim() }
 } catch { exit 0 }
 
-# Sanitize to [a-z0-9-] then whitelist — blocks terminal-escape / OSC injection.
+# Sanitize to [a-z0-9-] then whitelist; blocks terminal-escape / OSC injection.
 $State = $State.ToLowerInvariant() -replace '[^a-z0-9-]', ''
 if ($State -ne "on") { exit 0 }
 
