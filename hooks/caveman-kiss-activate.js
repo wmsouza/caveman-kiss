@@ -21,4 +21,4 @@ try {
 }
 
 const body = fs.readFileSync(skill, "utf8").replace(/^---[\s\S]*?---\s*/, "");
-process.stdout.write(`KISS MODE ACTIVE: Keep It Simple, Stupid\n\n${body}`);
+process.stdout.write(`CAVEMAN-KISS ACTIVE: Keep It Simple, Stupid\n\n${body}`);

@@ -9,7 +9,7 @@
             "command": "command -v node >/dev/null 2>&1 && node \"${CLAUDE_PLUGIN_ROOT}/hooks/caveman-kiss-activate.js\" || exit 0",
             "commandWindows": "if (Get-Command node -ErrorAction SilentlyContinue) { node \"$env:CLAUDE_PLUGIN_ROOT\\hooks\\caveman-kiss-activate.js\" }",
             "timeout": 5,
-            "statusMessage": "Loading KISS mode..."
+            "statusMessage": "Loading caveman-kiss..."
           }
         ]
       }
@@ -22,7 +22,7 @@
             "command": "command -v node >/dev/null 2>&1 && node \"${CLAUDE_PLUGIN_ROOT}/hooks/caveman-kiss-tracker.js\" || exit 0",
             "commandWindows": "if (Get-Command node -ErrorAction SilentlyContinue) { node \"$env:CLAUDE_PLUGIN_ROOT\\hooks\\caveman-kiss-tracker.js\" }",
             "timeout": 5,
-            "statusMessage": "Tracking KISS mode..."
+            "statusMessage": "Tracking caveman-kiss..."
           }
         ]
       }
