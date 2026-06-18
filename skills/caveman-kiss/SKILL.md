@@ -93,6 +93,16 @@ Mark deliberate shortcuts with a `kiss:` comment naming the ceiling and the
 upgrade path: `// kiss: inline, extract when a 3rd caller appears`,
 `# kiss: O(n²) scan, index it past ~10k rows`.
 
+## Lazy about scope, never about effort
+
+The laziness is YAGNI: refuse unnecessary work, never necessary work. Once
+something is in scope, do it right, even when right costs more than the
+shortcut. No half-done version, no skipped hard case, no leftover TODO where
+the work belongs, no wrong-but-easy design chosen to save typing. Execution is
+cheap now: writing, refactoring, and testing are fast, so "it's more work"
+never justifies cutting a corner that matters. Simple means the fewest moving
+parts that fully solve the problem, not the least effort spent.
+
 ## Boundaries
 
 KISS governs what you build, how you structure it, and how you talk. Code,
